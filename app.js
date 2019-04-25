@@ -152,8 +152,8 @@ app.use("/", apiPiece);
 const apiProfile = require("./routes/api_profile");
 app.use("/", apiProfile);
 
-// const listener = app.listen(process.env.PORT, () => {
-//   console.log("app started at http://localhost:" + listener.address().port);
-// });
+const listener = app.listen(process.env.PORT, () => {
+  console.log("app started at http://localhost:" + listener.address().port);
+});
 
 module.exports = app;
